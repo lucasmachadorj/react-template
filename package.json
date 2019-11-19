@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@apollo/react-hooks": "^3.1.3",
+    "@reach/router": "^1.2.1",
     "@types/jest": "24.0.23",
     "@types/node": "^12.12.11",
     "@types/react": "^16.9.11",
@@ -24,7 +25,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet",
-    "generate": "graphql-codegen --config codegen.js --watch"
+    "generate": "graphql-codegen --config codegen.js --watch",
+    "styleguidist": "npx styleguidist server",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,9 +51,14 @@
     "@graphql-codegen/typescript": "^1.8.3",
     "@graphql-codegen/typescript-operations": "^1.8.3",
     "@graphql-codegen/typescript-react-apollo": "^1.8.3",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
     "dotenv": "^8.2.0",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "react-styleguidist": "^10.2.1"
   }
 }
